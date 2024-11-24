@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatxbot - AI Assistants & Process Automation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Chatxbot Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+                <a href="#pricing" data-en="Pricing" data-es="Precios">Pricing</a>
+                <a href="#faq" data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</a>
+                <div class="language-switch">
+                    <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+                    <button onclick="changeLanguage('es')" class="lang-btn" data-lang="es">ES</button>
+                </div>
+                <button class="cta-button" data-en="Get Started" data-es="Comenzar">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 data-en="Transform Your Business with AI-Powered Automation" 
+                data-es="Transforma tu Negocio con Automatización Inteligente">
+                Transform Your Business with AI-Powered Automation
+            </h1>
+            <p class="subheadline" 
+               data-en="Empower your team with intelligent chatbots and streamlined workflows designed for modern enterprises" 
+               data-es="Potencia tu equipo con chatbots inteligentes y flujos de trabajo optimizados">
+                Empower your team with intelligent chatbots and streamlined workflows designed for modern enterprises
+            </p>
+            <button class="cta-button" data-en="Start My Free Trial" data-es="Comienza tu Prueba Gratuita">
+                Start My Free Trial
+            </button>
+            <div class="social-proof">
+                <div class="metrics">
+                    <div class="metric">
+                        <span class="number">100+</span>
+                        <span class="label" data-en="Clients Served" data-es="Clientes Atendidos">Clients Served</span>
+                    </div>
+                    <div class="metric">
+                        <span class="number">98%</span>
+                        <span class="label" data-en="Satisfaction Rate" data-es="Satisfacción">Satisfaction Rate</span>
+                    </div>
+                    <div class="metric">
+                        <span class="number">24/7</span>
+                        <span class="label" data-en="Support" data-es="Soporte">Support</span>
+                    </div>
+                </div>
+                <div class="client-logos">
+                    <!-- Add client logos here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <h2 data-en="Common Business Challenges We Solve" 
+                data-es="Desafíos Empresariales que Resolvemos">Common Business Challenges We Solve</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <i class="fas fa-clock"></i>
+                    <h3 data-en="Time-Consuming Manual Tasks" 
+                        data-es="Tareas Manuales que Consumen Tiempo">Time-Consuming Manual Tasks</h3>
+                    <p data-en="Repetitive processes eating up valuable employee time" 
+                       data-es="Procesos repetitivos que consumen el valioso tiempo de los empleados">Repetitive processes eating up valuable employee time</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-comments"></i>
+                    <h3 data-en="Customer Support Delays" 
+                        data-es="Retrasos en Atención al Cliente">Customer Support Delays</h3>
+                    <p data-en="Long response times leading to customer dissatisfaction" 
+                       data-es="Largos tiempos de respuesta que generan insatisfacción">Long response times leading to customer dissatisfaction</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3 data-en="Scaling Difficulties" 
+                        data-es="Dificultades de Escalamiento">Scaling Difficulties</h3>
+                    <p data-en="Unable to handle growing customer demands efficiently" 
+                       data-es="Dificultad para manejar la creciente demanda de clientes">Unable to handle growing customer demands efficiently</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="services">
+        <div class="container">
+            <h2 data-en="Our AI-Powered Solutions" 
+                data-es="Nuestras Soluciones con IA">Our AI-Powered Solutions</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <i class="fas fa-robot"></i>
+                    <h3 data-en="Intelligent Chatbots" 
+                        data-es="Chatbots Inteligentes">Intelligent Chatbots</h3>
+                    <p data-en="24/7 customer support with natural language processing" 
+                       data-es="Soporte al cliente 24/7 con procesamiento de lenguaje natural">24/7 customer support with natural language processing</p>
+                </div>
+                <div class="solution-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3 data-en="Process Automation" 
+                        data-es="Automatización de Procesos">Process Automation</h3>
+                    <p data-en="Streamline workflows and eliminate repetitive tasks" 
+                       data-es="Optimiza flujos de trabajo y elimina tareas repetitivas">Streamline workflows and eliminate repetitive tasks</p>
+                </div>
+                <div class="solution-card">
+                    <i class="fas fa-brain"></i>
+                    <h3 data-en="Custom AI Solutions" 
+                        data-es="Soluciones de IA Personalizadas">Custom AI Solutions</h3>
+                    <p data-en="Tailored AI implementations for your specific needs" 
+                       data-es="Implementaciones de IA adaptadas a tus necesidades específicas">Tailored AI implementations for your specific needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 data-en="Why Choose Chatxbot?" 
+                data-es="¿Por qué elegir Chatxbot?">Why Choose Chatxbot?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3 data-en="Boost Efficiency" 
+                        data-es="Aumenta la Eficiencia">Boost Efficiency</h3>
+                    <p data-en="Reduce manual work by up to 80% with intelligent automation" 
+                       data-es="Reduce el trabajo manual hasta un 80% con automatización inteligente">Reduce manual work by up to 80% with intelligent automation</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-smile"></i>
+                    <h3 data-en="Enhance Customer Experience" 
+                        data-es="Mejora la Experiencia del Cliente">Enhance Customer Experience</h3>
+                    <p data-en="Provide instant support and personalized interactions" 
+                       data-es="Brinda soporte instantáneo e interacciones personalizadas">Provide instant support and personalized interactions</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3 data-en="Drive Growth" 
+                        data-es="Impulsa el Crecimiento">Drive Growth</h3>
+                    <p data-en="Scale operations without increasing overhead costs" 
+                       data-es="Escala operaciones sin aumentar costos operativos">Scale operations without increasing overhead costs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 data-en="Simple, Transparent Pricing" data-es="Precios Simples y Transparentes">
+                Simple, Transparent Pricing
+            </h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 data-en="Basic Agent" data-es="Agente Básico">Basic Agent</h3>
+                    <div class="price" data-usd="29" data-clp="29.000">
+                        <span class="currency">$</span>
+                        <span class="amount">29</span>
+                        <span class="period" data-en="/month" data-es="/mes">/month</span>
+                    </div>
+                    <ul>
+                        <li data-en="Designed to answer frequently asked questions with precision" 
+                            data-es="Diseñado para responder preguntas frecuentes con precisión">
+                            Designed to answer frequently asked questions with precision
+                        </li>
+                        <li data-en="Uses a customized knowledge base to provide accurate responses" 
+                            data-es="Utiliza una base de conocimientos personalizada">
+                            Uses a customized knowledge base to provide accurate responses
+                        </li>
+                        <li data-en="Perfect for businesses looking to offer quick customer support" 
+                            data-es="Perfecto para empresas que buscan ofrecer soporte rápido">
+                            Perfect for businesses looking to offer quick customer support
+                        </li>
+                    </ul>
+                    <button class="cta-button payment-btn" 
+                            data-url-es="https://app.payku.cl/botonpago/index?idboton=28687&verif=f053867a"
+                            data-url-en="https://buymeacoffee.com/chatxbot/membership"
+                            data-en="Get Started" 
+                            data-es="Comenzar">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <h3 data-en="Professional Agent" data-es="Agente Profesional">Professional Agent</h3>
+                    <div class="price" data-usd="39" data-clp="39.000">
+                        <span class="currency">$</span>
+                        <span class="amount">39</span>
+                        <span class="period" data-en="/month" data-es="/mes">/month</span>
+                    </div>
+                    <ul>
+                        <li data-en="Manages schedules and bookings effortlessly (supports multiple calendars)" 
+                            data-es="Gestiona agendas y reservas sin esfuerzo (múltiples calendarios)">
+                            Manages schedules and bookings effortlessly (supports multiple calendars)
+                        </li>
+                        <li data-en="Ideal for automating client interactions, including reservations and follow-ups" 
+                            data-es="Ideal para automatizar interacciones con clientes">
+                            Ideal for automating client interactions, including reservations and follow-ups
+                        </li>
+                        <li data-en="24/7 support included" 
+                            data-es="Soporte 24/7 incluido">
+                            24/7 support included
+                        </li>
+                    </ul>
+                    <button class="cta-button payment-btn"
+                            data-url-es="https://app.payku.cl/botonpago/index?idboton=28686&verif=89e72c34"
+                            data-url-en="https://buymeacoffee.com/chatxbot/membership"
+                            data-en="Get Started" 
+                            data-es="Comenzar">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3 data-en="Custom Solutions" data-es="Soluciones Personalizadas">Custom Solutions</h3>
+                    <div class="price">
+                        <span data-en="Custom" data-es="Personalizado">Custom</span>
+                    </div>
+                    <ul>
+                        <li data-en="Tailored for complex projects with unique requirements" 
+                            data-es="Adaptado para proyectos complejos con requisitos únicos">
+                            Tailored for complex projects with unique requirements
+                        </li>
+                        <li data-en="Includes integration with existing systems and advanced features" 
+                            data-es="Incluye integración con sistemas existentes">
+                            Includes integration with existing systems and advanced features
+                        </li>
+                        <li data-en="Personalized support and ongoing development to fit your business goals" 
+                            data-es="Soporte personalizado y desarrollo continuo">
+                            Personalized support and ongoing development to fit your business goals
+                        </li>
+                    </ul>
+                    <button class="cta-button" data-en="Contact Us" data-es="Contáctanos">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 data-en="Frequently Asked Questions" 
+                data-es="Preguntas Frecuentes">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 data-en="How quickly can we implement your solution?" 
+                        data-es="¿Qué tan rápido podemos implementar su solución?">How quickly can we implement your solution?</h3>
+                    <p data-en="Most implementations are completed within 2-4 weeks, depending on complexity and customization needs." 
+                       data-es="La mayoría de las implementaciones se completan en 2-4 semanas, dependiendo de la complejidad y necesidades de personalización.">Most implementations are completed within 2-4 weeks, depending on complexity and customization needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Do you provide training and support?" 
+                        data-es="¿Proporcionan capacitación y soporte?">Do you provide training and support?</h3>
+                    <p data-en="Yes, we provide comprehensive training and ongoing support to ensure your team gets the most out of our solutions." 
+                       data-es="Sí, proporcionamos capacitación completa y soporte continuo para asegurar que su equipo aproveche al máximo nuestras soluciones.">Yes, we provide comprehensive training and ongoing support to ensure your team gets the most out of our solutions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Can your solutions integrate with our existing systems?" 
+                        data-es="¿Sus soluciones pueden integrarse con nuestros sistemas existentes?">Can your solutions integrate with our existing systems?</h3>
+                    <p data-en="Yes, our solutions are designed to integrate seamlessly with most common business tools and platforms." 
+                       data-es="Sí, nuestras soluciones están diseñadas para integrarse perfectamente con la mayoría de las herramientas y plataformas empresariales comunes.">Yes, our solutions are designed to integrate seamlessly with most common business tools and platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 data-en="Ready to Transform Your Business?" 
+                data-es="¿Listo para Transformar tu Negocio?">Ready to Transform Your Business?</h2>
+            <p data-en="Start your journey towards intelligent automation today" 
+               data-es="Comienza tu viaje hacia la automatización inteligente hoy">Start your journey towards intelligent automation today</p>
+            <button class="cta-button" data-en="Start My Free Trial" data-es="Comienza tu Prueba Gratuita">Start My Free Trial</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logo_footer.png" alt="Chatxbot Logo">
+                    <p data-en="Empowering businesses with intelligent automation solutions" 
+                       data-es="Potenciando empresas con soluciones de automatización inteligente">Empowering businesses with intelligent automation solutions</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Company" data-es="Empresa">Company</h4>
+                    <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+                    <a href="#pricing" data-en="Pricing" data-es="Precios">Pricing</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Resources" data-es="Recursos">Resources</h4>
+                    <a href="#faq" data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Connect" data-es="Conecta">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/56929571878" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/Chatxbot" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="&copy; 2024 Chatxbot. All rights reserved." 
+                   data-es="&copy; 2024 Chatxbot. Todos los derechos reservados.">&copy; 2024 Chatxbot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

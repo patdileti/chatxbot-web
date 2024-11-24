@@ -171,7 +171,7 @@ document.querySelectorAll('section').forEach(section => {
 });
 
 // Form validation for CTA buttons
-document.querySelectorAll('.cta-button').forEach(button => {
+document.querySelectorAll('.cta-button:not([href])').forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
         // Add your form handling or redirect logic here

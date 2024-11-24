@@ -69,18 +69,27 @@ body {
 
 /* Buttons */
 .cta-button {
+    display: inline-block;
     background: var(--primary-color);
-    color: white;
+    color: white !important;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 0.5rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 2rem;
 }
 
 .cta-button:hover {
     background: var(--secondary-color);
+    color: white !important;
+    text-decoration: none;
+}
+
+.nav-links .cta-button {
+    margin-top: 0;
 }
 
 /* Hero Section */
@@ -104,6 +113,19 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white !important;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.hero .cta-button:hover {
+    background: var(--secondary-color);
+    color: white !important;
 }
 
 .social-proof {
@@ -197,6 +219,8 @@ body {
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing-card.featured {
@@ -223,6 +247,48 @@ body {
 
 .pricing-card ul li {
     margin: 0.5rem 0;
+}
+
+.pricing-card .cta {
+    margin-top: auto;
+    padding: 0;
+}
+
+.pricing-card .cta-button {
+    margin-top: 2rem;
+    background: var(--primary-color);
+    color: white !important;
+}
+
+.pricing-card .cta-button:hover {
+    background: var(--secondary-color);
+}
+
+.pricing-card:last-child .cta {
+    background: var(--primary-color);
+    margin: 2rem -2rem -2rem -2rem;
+    padding: 2rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.pricing-card:last-child .cta-button {
+    background: white;
+    color: var(--primary-color) !important;
+    margin-top: 0;
+}
+
+.pricing-card:last-child .cta-button:hover {
+    background: var(--light-background);
+}
+
+.pricing-card:last-child {
+    background: var(--background);
+    color: var(--text-color);
+}
+
+.pricing-card:last-child .price,
+.pricing-card:last-child h3 {
+    color: var(--text-color);
 }
 
 /* Price formatting */
